@@ -1,1 +1,1 @@
-# seg2900
+# Our project
