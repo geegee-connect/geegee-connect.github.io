@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    background-color: #8f001a;
+    color: #FFFFFF;
+    font-family: "Roboto";
+}
+
+h1 {font-family: "Roboto Black";}
+
+
+
+.appdemo {
+display:flex;
+justify-content:center;
+align-items:center;
+height: 600px;
+position: relative;
+}
+.appdemo.overlay{
+height: 100%;
+display:block;
+position:absolute;
+pointer-events: none;
+}
+.appdemo.trynow{
+height: 60%;
+display:block;
+position:absolute;
+pointer-events: none;
+margin-left: -500px
+}
+.appdemo iframe{
+height: 95%;
+width: 260px;
+display:block;
+position:absolute;
+border-radius: 25px;
+}
+
+
+.topnav {
+background-color: rgb(0, 0, 0);
+overflow: hidden;
+height:50px;
+display:flex;
+justify-content:left;
+align-items:center;
+padding: 5px;
+}
+
+.topnav_buttons {
+transition: all .1s ease-in;
+float: left;
+height:60%;
+vertical-align: middle;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-left: 10px;
+}
+
+.topnav_buttons_img {
+float: left;
+height:60%;
+vertical-align: middle;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-left: 10px;
+}
+
+.topnav img {
+width:50px; height:40px;
+float: left;
+padding: 20px;
+vertical-align: middle;
+}
+
+.topnav_buttons_img:hover img{
+    filter: brightness(80%);
+}
+
+.topnav a {
+color: #f2f2f2;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+padding: 5px 30px 5px;
+}
+
+.topnav_buttons.active {
+background-color: #3a000b;
+border-radius: 10px;
+}
+
+.topnav_buttons.active:hover {
+background-color: #91001b;
+}
+
+.topnav_buttons.active:hover > a {
+color: white;
+}
+
+.topnav_buttons:hover {
+background-color: rgb(54, 54, 54);
+border-radius: 10px;
+}
+.topnav_buttons:hover > a{
+color: rgb(255, 255, 255);
+}
+      
