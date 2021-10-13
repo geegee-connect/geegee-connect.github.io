@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #8f001a;
+    background-color: #90041c;
     color: #FFFFFF;
     font-family: "Roboto";
 }
@@ -15,8 +15,8 @@ justify-content:center;
 align-items:center;
 height: 600px;
 position: relative;
-margin-top: -100px;
-margin-left: 100px;
+margin-top: 30px;
+margin-left: 50px;
 }
 .appdemo.overlay{
 height: 100%;
@@ -29,7 +29,7 @@ height: 60%;
 display:block;
 position:absolute;
 pointer-events: none;
-margin-left: -400px
+margin-left: -450px
 }
 .appdemo iframe{
 height: 95%;
@@ -37,8 +37,8 @@ width: 260px;
 display:block;
 position:absolute;
 border-radius: 25px;
-margin-top: -100px;
-margin-left: 100px;
+margin-top: 30px;
+margin-left: 50px;
 }
 
 
@@ -50,7 +50,12 @@ height:50px;
 display:flex;
 justify-content:left;
 align-items:center;
+flex-wrap: wrap;
 padding: 5px;
+}
+.topnav-bg {
+background-color: rgb(39, 39, 39);
+height:60px;
 }
 .topnav_buttons {
 transition: all .1s ease-in;
