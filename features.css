@@ -1,0 +1,14 @@
+.features-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features-box-content {
+    background-color: #d63909;
+    padding: 20px;
+    flex-grow: 1;
+    width: 33%;
+    min-width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+}

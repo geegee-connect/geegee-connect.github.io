@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background-color: #90041c;
+    color: #FFFFFF;
+    font-family: "Roboto";
+}
+
+h1 {
+    font-family: "Roboto Black";
+    margin: 0px;`
+}
+
+h2 {
+    font-family: "Roboto Black";
+    margin: 0px;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}

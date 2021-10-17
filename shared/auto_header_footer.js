@@ -11,7 +11,7 @@ function setupHeaderAndFooter () {
     <div class="topnav">
         <div class="topnav_buttons_img"> <img src = "images/LogoWhiteNoText.svg" alt="Logo" img draggable="false"/> </div>
         <div class="topnav_buttons"> <a href="./index.html">Home</a> </div>
-        <div class="topnav_buttons"> <a href="#download">Download</a> </div>
+        <div class="topnav_buttons"> <a href="./features.html">Features</a> </div>
         <div class="topnav_buttons"> <a href="./about.html">About us</a> </div>
         <div class="topnav_buttons"> <a href="#contact">Contact</a> </div>
     </div> 

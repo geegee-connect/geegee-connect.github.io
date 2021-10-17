@@ -2,19 +2,25 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Download the font and store it in the project so it doesn't get reloaded constantly -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+        
         <title>UniNetwork - Home</title>
+
         <link rel="stylesheet" href="index.css">
-        <script src="main.js" type="text/javascript" defer></script>
+        <link rel="stylesheet" href="shared/header_footer.css">
+        <link rel="stylesheet" href="shared/style.css">
+        <script src="shared/auto_header_footer.js" type="text/javascript" defer></script>
     </head>
 
     <body>
 
         <!-- Header-->
         
-        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+        <div class="container">
             <img src = "images/LogoWhite.svg" alt="Logo" img draggable="false" width="150px" style="padding: 5px 30px 20px;" align="left" />
 
             <h1 style="padding:0px 16px 0px; font-size: 70px; margin: 40px 10px 10px; text-align: right;">UniNetwork</h1>
@@ -29,20 +35,19 @@
                 <img class="appdemo overlay" src = "images/iphone-x-4515390_1280.webp" alt="iPhone" img draggable="false"/>
                 <img class="appdemo trynow" src="images/TryNow.png" alt="Try now!" img draggable="false"/>
             </div>
+
+            <h2 style="padding:0px 16px 0px">Sections</h2>
+            <ul>
+                <li>Sports</li>
+                <ul>
+                    <li>Tennis</li>
+                    <li>Basketball</li>
+                </ul>
+                <li>Studying</li>
+            </ul></p>
         </div>
 
-        <h2 style="padding:0px 16px 0px">Sections</h2>
-        <ul>
-            <li>Sports</li>
-            <ul>
-                <li>Tennis</li>
-                <li>Basketball</li>
-            </ul>
-            <li>Studying</li>
-        </ul></p>
-
-        <!-- Footer-->
-        
+        <!-- Footer-->        
 
     </body>
 </html>
