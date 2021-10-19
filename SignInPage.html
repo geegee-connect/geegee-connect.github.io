@@ -6,7 +6,7 @@
         </title>
     </head>
     <body>
-        <form name="frmSignIn" action="ProcessingPage.html" method="get">
+        <form name="frmSignIn" action="ProcessingPage.html" method="post">
             <h1>Create your account</h1>
             <p>UserName:</p>
             <input type="text" name="txtUserName" id="txtUserName"
@@ -19,8 +19,28 @@
              />
              <br>
              <p>Confirm Password:</p>
-             <input type="password" name="pwdConfirm" id="pwdConfirm" value="" placeholder="Enter your password" maxlength="15"
+             <input type="password" name="pwdConfirm" id="pwdConfirm" value="" placeholder="Confirm your password" maxlength="15"
              />
+             <p>Status</p>
+             <input type="radio" name="rdbStatus" id="rdbStatus" value="S" checked/>Student
+             <br>
+             <input type="radio" name="rdbStatus" id="rdbStatus" value="O"/>Other
+             <p>Your University</p>
+             <input type="checkbox" name="chkYourUniversity" value="UO" checked/> University of Ottawa<br>
+             <input type="checkbox" name="chkYourUniversity" value="UC"/>Carlenton University<br>
+             <input type="checkbox" name="chkYourUniversity" value="AC"/>Algonquin College<br>
+             <input type="checkbox" name="chkYourUniversity" value="O"/>Other<br>
+             <p>Your preferences</p>
+             <select name="slctYourPreferences"> 
+                 <option value="F" selected>Football</option>
+                 <option value="B">Basketball</option>
+                 <option value="V">Volleyball</option>
+                 <option value="S">Swimming</option>
+                 <option value="SG">StudyGroups</option>
+            </select>
+            <p>Address:</p>
+            <textarea rows="5" cols="20" wrap="physical"></textarea><br>
+            <button type="submit">Submit</button>
 
 
         </form>
