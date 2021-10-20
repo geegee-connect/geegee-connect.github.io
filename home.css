@@ -44,16 +44,3 @@ header {
 .nav_links li a:hover {
 	color: #f44336;
 }
-
-button {
-	padding: 9px 25px;
-	background-color: rgb(244, 67, 54, 1);
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
-}
-
-button:hover {
-	background-color: rgba(244, 67, 54, 0.8);
-}
