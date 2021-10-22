@@ -7,7 +7,7 @@ function setupHeaderAndFooter () {
     const template_header = document.createElement('div');
     template_header.innerHTML = `
     <div class="topnav-bg">
-    <div class="container" style="max-width: 1000px; margin: 0 auto;">
+    <div class="container" style="max-width: 800px; margin: 0 auto;">
     <div class="topnav">
         <div class="topnav_buttons_img"> <img src = "images/LogoWhiteNoText.svg" alt="Logo" img draggable="false"/> </div>
         <div class="topnav_buttons"> <a href="./index.html">Home</a> </div>

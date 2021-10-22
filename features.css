@@ -1,6 +1,7 @@
 .features-box {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .features-box-content {
@@ -9,6 +10,30 @@
     flex-grow: 1;
     width: 33%;
     min-width: 300px;
-    margin: 10px;
+    margin: 20px;
     border-radius: 20px;
+
+    transition: all .2s ease-in-out;
+}
+
+.features-box-content.rot0 {
+    transform: rotate(1deg)
+}
+.features-box-content.rot1 {
+    transform: rotate(-1deg)
+}
+.features-box-content.rot2 {
+    transform: rotate(0.5deg)
+}
+.features-box-content.rot3 {
+    transform: rotate(-0.5deg)
+}
+
+.features-box-content {
+    background-color: #d63909;
+}
+
+.features-box-content:hover { 
+    background-color: #f85523;
+    transform: scale(1.05); 
 }
