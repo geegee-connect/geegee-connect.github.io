@@ -1,12 +1,25 @@
 .profile-pic {
     width: 375px;
+    border-radius: 10px;
+}
+.profile-pic.left {
     float: left;
     margin: 10px 20px 0px 0px;
-    border-radius: 10px;
+}
+.profile-pic.right {
+    float: right;
+    margin: 10px 0px 0px 20px;
 }
 
 .image-quote-group {
     overflow: auto;
     margin: 0px 0px 40px 0px;
     font-size: 20;
+}
+
+p.left {
+    text-align: left;
+}
+p.right {
+    text-align: right;
 }
