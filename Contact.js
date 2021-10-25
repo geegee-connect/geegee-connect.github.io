@@ -8,3 +8,5 @@ function validation() {
 
     alert(name);
 }
+
+validation();
