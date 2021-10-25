@@ -1,0 +1,7 @@
+General aesthetic: The main colour theme will be a dark red, reminiscent of the University of Ottawa’s red colour (since the app will initially be aimed at uOttawa students). We will avoid other colours so as not to have a clashing or overwhelming look - the website will be mainly a combination of red, black, and white, for a bold but pleasing look. Buttons, fonts, etc will be rounded and smooth.
+
+Colours: #90041c for red colour, apart from that it will mainly be white/grey/black.
+
+Fonts: Roboto (may change to another font in the future)
+
+Look of links, buttons, icons, etc: they will mostly be rectangles with rounded corners following the colour scheme described above
