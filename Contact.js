@@ -14,7 +14,7 @@ function valideMail(){
             return alert("Your email is valid!")
         }
         else {
-            alert("Error!Invalid email!")
+            alert("Error! Invalid email!")
         }
     }
 };
