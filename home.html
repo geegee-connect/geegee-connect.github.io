@@ -3,21 +3,135 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="home.css" />
 		<title>UniNetwork - Home Page</title>
+		<link rel="stylesheet" href="home.css" />
 	</head>
-	<header>
-		<body>
-			<img class="logo" src="images/Logo.svg" alt="Logo" />
-			<nav>
-				<ul class="nav_links">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Features</a></li>
-					<li><a href="#">Pricing</a></li>
-					<li><a href="#">Team</a></li>
-					<li><a href="#">Home</a></li>
+	<body>
+		<div class="navbar">
+			<div class="container">
+				<a class="logo" href="#">Uni<span>Network</span></a>
+
+				<img
+					class="mobile-menu"
+					id="mobile-cta"
+					src="images/menu.svg"
+					alt="Open Navigation Bar"
+				/>
+
+				<nav>
+					<img
+						src="images/exit.svg"
+						id="mobile-exit"
+						class="mobile-menu-exit"
+						alt="Close Navigation Bar"
+					/>
+
+					<ul class="primary-nav">
+						<li class="current"><a href="#">Home</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Pricing</a></li>
+					</ul>
+
+					<ul class="secondary-nav">
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Download now</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<section class="hero">
+			<div class="container">
+				<div class="left-col">
+					<p class="subhead">Made by GeeGee-Connect</p>
+					<h1>Find Players With Just One Click</h1>
+					<blockquote>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+						maximus, nulla ut commodo sagittis, sapien dui mattis dui, non
+						pulvinar lorem felis nec erat
+					</blockquote>
+					<div class="hero-cta">
+						<a href="#" class="primary-cta">Try for free</a>
+						<a href="#" class="watch-demo-cta"> Watch Demo </a>
+					</div>
+				</div>
+				<img src="images/red_iphone.png" class="hero-img" alt="iPhone Image" />
+			</div>
+		</section>
+
+		<section class="features">
+			<div class="container">
+				<ul>
+					<li>
+						<img src="images/placeholder.png" alt="Placeholder Icon" />
+						<h2>Some title here</h2>
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+							imperdiet suscipit nulla, id tincidunt lorem varius quis. Sed
+							dignissim neque gravida imperdiet volutpat. Sed orci mi, luctus
+							sed est at, mattis iaculis erat. Nullam vitae facilisis nunc.
+							Donec in tortor dolor. Donec a tellus ut libero aliquam eleifend a
+							non justo. Sed a rutrum est. Morbi malesuada risus vitae dui
+							elementum posuere. Phasellus condimentum lobortis efficitur.
+						</blockquote>
+					</li>
+					<li>
+						<img src="images/placeholder.png" alt="Placeholder Icon" />
+						<h2>Some title here</h2>
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+							imperdiet suscipit nulla, id tincidunt lorem varius quis. Sed
+							dignissim neque gravida imperdiet volutpat. Sed orci mi, luctus
+							sed est at, mattis iaculis erat. Nullam vitae facilisis nunc.
+							Donec in tortor dolor. Donec a tellus ut libero aliquam eleifend a
+							non justo. Sed a rutrum est. Morbi malesuada risus vitae dui
+							elementum posuere. Phasellus condimentum lobortis efficitur.
+						</blockquote>
+					</li>
+					<li>
+						<img src="images/placeholder.png" alt="Placeholder Icon" />
+						<h2>Some title here</h2>
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+							imperdiet suscipit nulla, id tincidunt lorem varius quis. Sed
+							dignissim neque gravida imperdiet volutpat. Sed orci mi, luctus
+							sed est at, mattis iaculis erat. Nullam vitae facilisis nunc.
+							Donec in tortor dolor. Donec a tellus ut libero aliquam eleifend a
+							non justo. Sed a rutrum est. Morbi malesuada risus vitae dui
+							elementum posuere. Phasellus condimentum lobortis efficitur.
+						</blockquote>
+					</li>
 				</ul>
-			</nav>
-		</body>
-	</header>
+			</div>
+		</section>
+
+		<section class="second-cta">
+			<h1>Get started with UniNetwork today!</h1>
+			<p>
+				Download now to get a free 14 day trial and play any game you want at
+				any time with new people
+			</p>
+			<a href="#" class="secondary-cta">Try for free</a>
+		</section>
+
+		<div class="footer-container">
+			<div class="footer">
+				<div class="footer-email-form">
+					<h2>Subscribe to our news letter and stay up to date</h2>
+					<input
+						type="email"
+						placeholder="Enter your email address"
+						id="footer-email"
+					/>
+					<input type="submit" value="Subscribe" id="footer-email-btn" />
+				</div>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<div class="footerc">
+			<h6>Privacy Policy | Terms of Use</h6>
+			<h6>Copyright &#169 2021 UniNetwork. All rights reserved.</h6>
+		</div>
+	</footer>
 </html>
