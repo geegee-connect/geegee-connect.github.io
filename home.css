@@ -308,20 +308,17 @@ nav li a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  .footer-email-form h2 {
-    font-size: 40px;
-  }
-  .footer-email-form .mobile-menu,
-  .footer-email-form .mobile-menu-exit {
+  .mobile-menu,
+  .mobile-menu-exit {
     display: none;
   }
-  .footer-email-form .navbar .container {
+  .navbar .container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 180px auto;
         grid-template-columns: 180px auto;
   }
-  .footer-email-form .navbar nav {
+  .navbar nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -334,36 +331,36 @@ nav li a:hover {
     width: 100%;
     padding: 0;
   }
-  .footer-email-form .navbar nav ul {
+  .navbar nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .footer-email-form .navbar nav a {
+  .navbar nav a {
     color: black;
     font-size: 1em;
     padding: 0.1em 1em;
   }
-  .footer-email-form .navbar nav ul.primary-nav {
+  .navbar nav ul.primary-nav {
     margin: 0;
   }
-  .footer-email-form .navbar nav li.current a {
+  .navbar nav li.current a {
     font-weight: bold;
   }
-  .footer-email-form .navbar nav li.download-now-cta a {
+  .navbar nav li.download-now-cta a {
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
     font-weight: bold;
     border-radius: 5em;
     margin-top: -0.2em;
   }
-  .footer-email-form .navbar nav li.download-now-cta a:hover {
+  .navbar nav li.download-now-cta a:hover {
     background: var(--primary-color);
     color: white;
   }
 }
 
-@media only screen and (min-width: 768px) and (min-width: 1080px) {
+@media only screen and (min-width: 1080px) {
   .container {
     width: 1080px;
     margin: 0 auto;
