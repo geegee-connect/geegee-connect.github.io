@@ -104,7 +104,7 @@ section {
 
 .left-col .watch-demo-cta img {
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   fill: white !important;
 }
 
@@ -112,8 +112,8 @@ section {
   width: 80%;
   margin-top: 3em;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .features {
@@ -159,7 +159,7 @@ h2 {
 .footer-container {
   padding-bottom: 4em;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .footer-container .footer {
@@ -169,10 +169,10 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 
@@ -182,8 +182,8 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-right: 4em;
 }
 
@@ -204,7 +204,7 @@ h2 {
 
 .footer-container .footer .footer-email-form {
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   text-align: center;
 }
 
@@ -310,21 +310,21 @@ nav li a:hover {
 @media only screen and (min-width: 768px) {
   .mobile-menu,
   .mobile-menu-exit {
-    display: none;
+  display: none;
   }
   .navbar .container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 180px auto;
-        grid-template-columns: 180px auto;
+    grid-template-columns: 180px auto;
   }
   .navbar nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     background: none;
     position: unset;
     height: auto;
@@ -373,8 +373,8 @@ nav li a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     text-align: left;
   }
   .hero .container .left-col {
