@@ -1,3 +1,8 @@
+.header-wrapper {
+    margin: 3em;
+    text-align: center;
+}
+
 .profile-pic {
     width: 375px;
     border-radius: 10px;
@@ -11,9 +16,18 @@
     margin: 10px 0px 0px 20px;
 }
 
+.member-group {
+    margin: 3em 1em;
+    padding: 2em 3em;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    box-shadow: rgb(17 12 46 / 30%) 0px 24px 30px 0px;
+}
+
 .image-quote-group {
     overflow: auto;
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 1em 0px;
     font-size: 20;
 }
 

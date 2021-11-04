@@ -1,53 +1,112 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Download the font and store it in the project so it doesn't get reloaded constantly -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
-        
-        <title>UniNetwork - Home</title>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>UniNetwork - Home Page</title>
+		<link rel="stylesheet" href="index.css" />
 
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="shared/header_footer.css">
-        <link rel="stylesheet" href="shared/style.css">
+		<link rel="stylesheet" href="shared/header_footer.css">
+		<script src="index.js" type="text/javascript" defer></script>
         <script src="shared/auto_header_footer.js" type="text/javascript" defer></script>
-    </head>
+		
+	</head>
+	<body>
+		<section class="hero">
+			<div class="container">
+				<div class="left-col">
+					<p class="subhead">Made by GeeGee-Connect</p>
+					<h1>Find Friends With Just One Click</h1>
+					<blockquote>
+						UniNetwork is an app made specifically for making new connections with students all around your
+						own and nearby campuses. The first step is to set your interests on your profile from a variety
+						of selections the app offers: soccer, basketball, tennis, e-sports, study groups, language
+						learning groups. You name it, we have it. Once you match with people with similar interests,
+						you can meet, and make new friends.
+					</blockquote>
+					<div class="hero-cta">
+						<a href="#" class="primary-cta">Try for free</a>
+						<a href="#" class="watch-demo-cta"> Watch Demo </a>
+					</div>
+				</div>
+				<div class="hero-img">
+					<svg viewBox="0 0 1238 2008"></svg>
+				</div>
+					
+				</div>
+			</div>
+		</section>
 
-    <body>
+		<section class="features" id="features">
+			<div class="container">
+				<ul>
+					<li>
+						<img src="images/placeholder.png" alt="Placeholder Icon" />
+						<h2>Some title here</h2>
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+							imperdiet suscipit nulla, id tincidunt lorem varius quis. Sed
+							dignissim neque gravida imperdiet volutpat. Sed orci mi, luctus
+							sed est at, mattis iaculis erat. Nullam vitae facilisis nunc.
+							Donec in tortor dolor. Donec a tellus ut libero aliquam eleifend a
+							non justo. Sed a rutrum est. Morbi malesuada risus vitae dui
+							elementum posuere. Phasellus condimentum lobortis efficitur.
+						</blockquote>
+					</li>
+					<li>
+						<img src="images/placeholder.png" alt="Placeholder Icon" />
+						<h2>Some title here</h2>
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+							imperdiet suscipit nulla, id tincidunt lorem varius quis. Sed
+							dignissim neque gravida imperdiet volutpat. Sed orci mi, luctus
+							sed est at, mattis iaculis erat. Nullam vitae facilisis nunc.
+							Donec in tortor dolor. Donec a tellus ut libero aliquam eleifend a
+							non justo. Sed a rutrum est. Morbi malesuada risus vitae dui
+							elementum posuere. Phasellus condimentum lobortis efficitur.
+						</blockquote>
+					</li>
+					<li>
+						<img src="images/placeholder.png" alt="Placeholder Icon" />
+						<h2>Some title here</h2>
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+							imperdiet suscipit nulla, id tincidunt lorem varius quis. Sed
+							dignissim neque gravida imperdiet volutpat. Sed orci mi, luctus
+							sed est at, mattis iaculis erat. Nullam vitae facilisis nunc.
+							Donec in tortor dolor. Donec a tellus ut libero aliquam eleifend a
+							non justo. Sed a rutrum est. Morbi malesuada risus vitae dui
+							elementum posuere. Phasellus condimentum lobortis efficitur.
+						</blockquote>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-        <!-- Header-->
-        
-        <div class="container">
-            <img src = "images/LogoWhite.svg" alt="Logo" img draggable="false" width="150px" style="padding: 5px 30px 20px;" align="left" />
+		<section class="second-cta">
+			<h1>Get started with UniNetwork today!</h1>
+			<p>
+				Download now to get a free 14 day trial and play any game you want at
+				any time with new people
+			</p>
+			<a href="#" class="secondary-cta">Try for free</a>
+		</section>
 
-            <h1 style="padding:0px 16px 0px; font-size: 70px; margin: 40px 10px 10px; text-align: right;">UniNetwork</h1>
-            <h2 style="padding:0px 16px 0px; font-size: 40px; margin: -20px 10px 10px; text-align: right;">by GeeGee Connect</h2>
-            <div align="left">
-                <h2 style="padding:0px 16px 0px"><br clear="left">Description</h2>
-                <p style="padding:0px 16px 16px;">UniNetwork is an app made specifically for making new connections with students all around your own and nearby campuses. The first step is to set your interests on your profile from a variety of selections the app offers: soccer, basketball, tennis, e-sports, study groups, language learning groups. You name it, we have it. Once you match with people with similar interests, you can meet, and make new friends.</p>
-            </div>
+		<div class="footer-container">
+			<div class="footer">
+				<div class="footer-email-form">
+					<h2>Subscribe to our news letter and stay up to date</h2>
+					<input
+						type="email"
+						placeholder="Enter your email address"
+						id="footer-email"
+					/>
+					<input type="submit" value="Subscribe" id="footer-email-btn" />
+				</div>
+			</div>
+		</div>
 
-            <div class="appdemo">
-                <iframe src="./about.html" title="Demo" height="200" width="300"></iframe>
-                <img class="appdemo overlay" src = "images/iphone-x-4515390_1280.webp" alt="iPhone" img draggable="false"/>
-                <img class="appdemo trynow" src="images/TryNow.png" alt="Try now!" img draggable="false"/>
-            </div>
+		<script src="home.js"></script>
 
-            <h2 style="padding:0px 16px 0px">Sections</h2>
-            <ul>
-                <li>Sports</li>
-                <ul>
-                    <li>Tennis</li>
-                    <li>Basketball</li>
-                </ul>
-                <li>Studying</li>
-            </ul></p>
-        </div>
-
-        <!-- Footer-->        
-
-    </body>
+	</body>
 </html>

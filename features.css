@@ -1,7 +1,24 @@
+body {
+    background-color: var(--primary-color);
+    color: white;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.margin-wrapper {
+    text-align: center;
+    margin: 3em 1em;
+}
+
 .features-box {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.features-box img{
+    filter: invert(1);
+    user-select: none;
 }
 
 .features-box-content {
@@ -31,9 +48,22 @@
 
 .features-box-content {
     background-color: #d63909;
+    box-shadow: rgba(17, 12, 46, 0.3) 0px 24px 30px 0px;
 }
 
 .features-box-content:hover { 
     background-color: #f85523;
     transform: scale(1.05); 
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 60px 0px;
 }
+
+a.primary-cta {
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-size: 1.4em;
+    border-radius: 5em;
+    font-weight: bold;
+    display: inline-block;
+  }

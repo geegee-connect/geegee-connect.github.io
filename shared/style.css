@@ -1,12 +1,10 @@
 body {
     margin: 0;
-    background-color: #90041c;
-    color: #FFFFFF;
-    font-family: "Roboto";
+    font-family: "Poppins";
 }
 
 h1 {
-    font-family: "Roboto Black";
+    font-size: 2.5em;
     margin: 0px;
 }
 
@@ -16,6 +14,6 @@ h2 {
 }
 
 .container {
-	max-width: 800px;
+	max-width: 1080px;
 	margin: 0 auto;
 }
