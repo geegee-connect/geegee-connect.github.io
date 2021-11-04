@@ -33,6 +33,12 @@ body {
     transition: all .2s ease-in-out;
 }
 
+@media only screen and (max-width: 400px) {
+    .features-box-content {
+        min-width: revert;
+    }
+}
+
 .features-box-content.rot0 {
     transform: rotate(1deg)
 }
