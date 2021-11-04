@@ -18,7 +18,7 @@ function setupHeaderAndFooter () {
                 <ul class="primary-nav">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./features.html">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
+                    <li><a href="./pricing.html">Pricing</a></li>
                 </ul>
 
                 <ul class="secondary-nav">
@@ -34,14 +34,30 @@ function setupHeaderAndFooter () {
     // 1. Check in what page we are.
     // 2. Add class="current" to the correct <li>
 
-    var elem = document.getElementsByTagName("li");
+    const elem = document.getElementsByTagName("li");
     for (var i = 0; i < elem.length; i++) {
 
         // Make add class current to "li" if its url match the current page
-        var listElemUrl = elem[i].getElementsByTagName("a")[0].href;
-        if(listElemUrl == window.location.href)
-            elem[i].classList.add("current");
+        if(elem[i].getElementsByTagName("a").length > 0) {
+            var listElemUrl = elem[i].getElementsByTagName("a")[0].href;
+            if(listElemUrl == window.location.href)
+                elem[i].classList.add("current");
+        }
     }
+    
+    // Hamburger menu interactivity
+    const mobileBtn = document.getElementById("mobile-cta");
+    nav = document.querySelector("nav");
+    mobileBtnExit = document.getElementById("mobile-exit");
+
+    mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+    });
+
+    mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+    });
+
 
     // Appends the bottom footer bar to any pages with this script
     const template_footer = document.createElement('div');
