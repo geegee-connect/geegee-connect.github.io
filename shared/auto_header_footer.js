@@ -1,11 +1,9 @@
-
 document.body.onload = setupHeaderAndFooter();
 
-function setupHeaderAndFooter () {
-
-    // Appends the top navigation bar to any pages with this script
-    const template_header = document.createElement('div');
-    template_header.innerHTML = `
+function setupHeaderAndFooter() {
+	// Appends the top navigation bar to any pages with this script
+	const template_header = document.createElement("div");
+	template_header.innerHTML = `
     <div class="navbar">
         <div class="container">
             <a class="logo" href="#">Uni<span>Network</span></a>
@@ -29,39 +27,36 @@ function setupHeaderAndFooter () {
         </div>
     </div>
     `;
-    document.body.prepend(template_header);
+	document.body.prepend(template_header);
 
-    // 1. Check in what page we are.
-    // 2. Add class="current" to the correct <li>
+	// 1. Check in what page we are.
+	// 2. Add class="current" to the correct <li>
 
-    const elem = document.getElementsByTagName("li");
-    for (var i = 0; i < elem.length; i++) {
+	const elem = document.getElementsByTagName("li");
+	for (var i = 0; i < elem.length; i++) {
+		// Make add class current to "li" if its url match the current page
+		if (elem[i].getElementsByTagName("a").length > 0) {
+			var listElemUrl = elem[i].getElementsByTagName("a")[0].href;
+			if (listElemUrl == window.location.href) elem[i].classList.add("current");
+		}
+	}
 
-        // Make add class current to "li" if its url match the current page
-        if(elem[i].getElementsByTagName("a").length > 0) {
-            var listElemUrl = elem[i].getElementsByTagName("a")[0].href;
-            if(listElemUrl == window.location.href)
-                elem[i].classList.add("current");
-        }
-    }
-    
-    // Hamburger menu interactivity
-    const mobileBtn = document.getElementById("mobile-cta");
-    nav = document.querySelector("nav");
-    mobileBtnExit = document.getElementById("mobile-exit");
+	// Hamburger menu interactivity
+	const mobileBtn = document.getElementById("mobile-cta");
+	nav = document.querySelector("nav");
+	mobileBtnExit = document.getElementById("mobile-exit");
 
-    mobileBtn.addEventListener("click", () => {
-        nav.classList.add("menu-btn");
-    });
+	mobileBtn.addEventListener("click", () => {
+		nav.classList.add("menu-btn");
+	});
 
-    mobileBtnExit.addEventListener("click", () => {
-        nav.classList.remove("menu-btn");
-    });
+	mobileBtnExit.addEventListener("click", () => {
+		nav.classList.remove("menu-btn");
+	});
 
-
-    // Appends the bottom footer bar to any pages with this script
-    const template_footer = document.createElement('div');
-    template_footer.innerHTML = `
+	// Appends the bottom footer bar to any pages with this script
+	const template_footer = document.createElement("div");
+	template_footer.innerHTML = `
     <footer>
 		<div class="footerc">
 			<h6>Privacy Policy | Terms of Use</h6>
@@ -69,10 +64,5 @@ function setupHeaderAndFooter () {
 		</div>
 	</footer>
     `;
-    document.body.append(template_footer);
+	document.body.append(template_footer);
 }
-
-
-
-
-
