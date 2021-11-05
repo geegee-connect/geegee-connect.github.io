@@ -10,4 +10,4 @@ UniNetwork is an app made especially for making new connections with students al
 [Antonin Francoeur](https://github.com/antoninfrancoeur)<br/>
 
 ## Website link
-https://geegee-connect.github.io/
+https://geegee-connect.github.io/index.html
