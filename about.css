@@ -4,18 +4,29 @@
 }
 
 .profile-pic {
-    width: 375px;
+    width: calc(min(375px, 100%));
     border-radius: 10px;
 }
-.profile-pic.left {
-    float: left;
-    margin: 10px 20px 0px 0px;
-}
-.profile-pic.right {
-    float: right;
-    margin: 10px 0px 0px 20px;
+
+.divider-bar {
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary-color);
 }
 
+.profile-pic.left { float: left; margin: 10px 20px 0px 0px; }
+h1.left { text-align: left; float: none; }
+p.left { text-align: left; }
+
+.profile-pic.right { float: right; margin: 10px 0px 0px 20px; }
+h1.right { text-align: right; float: none }
+p.right { text-align: right; }
+
+.image-quote-group {
+    overflow: auto;
+    margin: 0px 0px 1em 0px;
+    font-size: 20;
+}
 .member-group {
     margin: 3em 1em;
     padding: 2em 3em;
@@ -25,15 +36,15 @@
     box-shadow: rgb(17 12 46 / 30%) 0px 24px 30px 0px;
 }
 
-.image-quote-group {
-    overflow: auto;
-    margin: 0px 0px 1em 0px;
-    font-size: 20;
+@media only screen and (max-width: 768px) {
+    .member-group {
+        margin: 2em 1em;
+        padding: 1em 2em;
+    }
+    .profile-pic.right { float: left; margin: 10px 20px 0px 0px; }
+    h1.right { text-align: left; float: none }
+    p.right { text-align: left; }
 }
 
-p.left {
-    text-align: left;
-}
-p.right {
-    text-align: right;
-}
+
+

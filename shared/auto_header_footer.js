@@ -21,7 +21,7 @@ function setupHeaderAndFooter() {
 
                 <ul class="secondary-nav">
                     <li><a href="./about.html">Team</a></li>
-                    <li class="download-now-cta"><a href="#">Download now</a></li>
+                    <li class="download-now-cta"><a href="./app.html">Download now</a></li>
                 </ul>
             </nav>
         </div>

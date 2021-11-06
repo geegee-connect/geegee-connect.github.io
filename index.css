@@ -57,7 +57,7 @@ ul {
 }
 
 section {
-  padding: 3em 1.1em;
+  padding: 1.5em 1em;
 }
 
 .hero {
@@ -66,7 +66,7 @@ section {
 
   /*TEST*/
   box-shadow: rgba(17, 12, 46, 0.3) 0px 24px 30px 0px;
-  margin: 2em;
+  margin: 1em;
   border-radius: 2em;
   z-index: 10;
   position: relative;
@@ -75,7 +75,8 @@ section {
 .left-col blockquote {
   color: white;
   margin-bottom: 2.49em;
-  margin-left: 0;
+  margin-inline-start: 1em;
+  margin-inline-end: 1em;
 }
 
 .left-col .subhead {
@@ -396,6 +397,9 @@ nav li a:hover {
   section {
     padding: 4em 4em;
   }
+  .hero {
+    margin: 2em;
+  }
   .hero .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -408,9 +412,19 @@ nav li a:hover {
   .hero .container .left-col {
     margin: 3em 3em 3em 5em;
   }
+  .left-col blockquote {
+    margin-left: 0;
+    margin-inline-end: revert;
+  }
+  .left-col .watch-demo-cta {
+    margin-top: 1em;
+  }
   .hero .container .left-col h1 {
     font-size: 3em;
     width: 90%;
+  }
+  section {
+    padding: 3em 1.1em;
   }
   .hero-cta {
     display: -webkit-box;
