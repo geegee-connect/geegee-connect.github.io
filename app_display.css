@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: black;
+    background-color: rgb(15, 7, 61);
 }
 
 .container {
@@ -27,8 +27,7 @@ iframe {
 #appdemo-base {
     position: fixed;
     background-color: white;
-    border-radius: 3em;
-    overflow: scroll;
+    overflow: hidden;
 
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;
