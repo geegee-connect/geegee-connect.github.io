@@ -4,33 +4,58 @@
         <title>
             Sign In
         </title>
-        <link rel="stylesheet" href="shared/style.css">
+        <link rel="stylesheet" href="sign_in_page.css">
     </head>
     <body>
-        <form name="frmSignIn" action="processing_page.html" method="post">
-            <h1>Create your account</h1>
-            <p>UserName:</p>
+        <section>
+           <form name="frmSignIn" action="processing_page.html" method="post">
+               <fieldset>
+                   <legend>Create your account</legend>
+
+
+            <label for="txtUserName">Your name:</label>
             <input type="text" name="txtUserName" id="txtUserName"
              value="" placeholder="Enter your full name"
              maxlength="30"
              />
              <br>
-             <p>Password:</p>
+
+
+             <label for="pwdUser">Password:</label>
              <input type="password" name="pwdUser" id="pwdUser" value="" placeholder="Enter your password" maxlength="15"
              />
              <br>
-             <p>Confirm Password:</p>
+
+
+             <label for="pwdConfirm">Confirm your password</label>
              <input type="password" name="pwdConfirm" id="pwdConfirm" value="" placeholder="Confirm your password" maxlength="15"
              />
-             <p>Status</p>
-             <input type="radio" name="rdbStatus" id="rdbStatus" value="S" checked/>Student
+             
+             <div class="checks">
+                  <p>Status</p>
+                  <input type="radio" name="rdbStatus" id="rdbStatus" value="S" checked>
+                  <label for="rdbStatus">Student</label>
+             </div>
              <br>
-             <input type="radio" name="rdbStatus" id="rdbStatus" value="O"/>Other
+             <div class="checks">
+                  <input type="radio" name="rdbStatus" id="rdbStatus" value="O">
+                  <label for="rdbStatus">Other</label>
              <p>Your University</p>
-             <input type="checkbox" name="chkYourUniversity" value="UO" checked/> University of Ottawa<br>
-             <input type="checkbox" name="chkYourUniversity" value="UC"/>Carlenton University<br>
-             <input type="checkbox" name="chkYourUniversity" value="AC"/>Algonquin College<br>
-             <input type="checkbox" name="chkYourUniversity" value="O"/>Other<br>
+
+                  <input type="checkbox" name="chkYourUniversity" id="University" value="UO" checked/><br>
+                  <label for="University">University of Ottawa</label>
+
+                  <input type="checkbox" name="chkYourUniversity" id="University2"value="UC"/><br>
+                  <label for="University2">Carlenton University</label>
+
+                  <input type="checkbox" name="chkYourUniversity" id="University3" value="AC"/><br>
+                  <label for="University3">Algonquin College</label>
+
+                  <input type="checkbox" name="chkYourUniversity" id="University4" value="O"/><br>
+                  <label for="University4">Other</label>
+             </div>
+
+                  
              <p>Your preferences</p>
              <select name="slctYourPreferences"> 
                  <option value="F" selected>Football</option>
@@ -42,8 +67,11 @@
             <p>Address:</p>
             <textarea rows="5" cols="20" wrap="physical"></textarea><br>
             <button type="submit">Submit</button>
+           </fieldset>
+           
 
 
         </form>
+        </section>
     </body>
 </html>
