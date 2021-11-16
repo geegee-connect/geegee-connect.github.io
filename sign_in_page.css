@@ -19,10 +19,11 @@
     width: 100%;
     padding: 25px;
     border-radius: 5px;
+    color:whitesmoke
 }
 #error{
     text-align: center;
-    color: black;
+    color:whitesmoke;
     position: absolute;
     top: 56%;
     left: 35.5%;
@@ -34,6 +35,7 @@ select{
     top: 60%;
     left: 41.5%;
     transform: translate(-50%, -10%);
+    color:gainsboro
 }
 textarea {
     margin-bottom: 60%;
@@ -42,12 +44,14 @@ textarea {
     padding: 10px;
     width: 300px;
     border: 1px solid orangered;
+    color:ghostwhite
 
  }
  #myParagraph{
      position: absolute;
      top: 67%;
      left: 35.5%;
+     color:whitesmoke
  }
  button {
     position: absolute;
