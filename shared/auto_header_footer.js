@@ -17,6 +17,7 @@ function setupHeaderAndFooter() {
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./features.html">Features</a></li>
                     <li><a href="./pricing.html">Pricing</a></li>
+					<li><a href="./Contact.html">Contact  us</a></li>
                 </ul>
 
                 <ul class="secondary-nav">

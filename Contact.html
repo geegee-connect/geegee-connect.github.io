@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact us</title>
-    <link rel="stylesheet" href="shared/style.css" />
-    <link rel="stylesheet" href="contact.css">
-    <link rel="shortcut icon" href="images/logo_icon.png" />
-</head>
-<body>
-    <script src="contact.js"></script>
-    <div class="wrapper">
-        <h2>Contact us!!<br></h2>
-        <p>We're waiting for your comment!<br> Do not hesitate to get in touch with us!</p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact us</title>
+		<link rel="stylesheet" href="shared/style.css" />
+		<link rel="stylesheet" href="contact.css" />
+		<link rel="shortcut icon" href="images/logo_icon.png" />
+		<script
+			src="shared/auto_header_footer.js"
+			type="text/javascript"
+			defer
+		></script>
+		<link rel="stylesheet" href="shared/header_footer.css" />
+	</head>
+	<body>
+		<script src="contact.js"></script>
+		<div class="wrapper">
+			<h2>Contact us!!<br /></h2>
+			<p>
+				We're waiting for your comment!<br />
+				Do not hesitate to get in touch with us!
+			</p>
 
-        <form id="myForm">
-            <div class="input_field">
-                <input type="text" placeholder="Full name" id="name">
-            </div>
-            <div class="errorHint" hidden>Your name is mandatory!</div>
-            <div class="input_field">
-                <input type="text" placeholder="Subject" id="subject">
-            </div>
-            <div class="input_field">
-                <input type="text" placeholder="Phone Number" id="phone">
-            </div>
-            <div class="input_field">
-                <input type="text" placeholder="Email Address" id="email">
-            </div>
-            <div class="input_field">
-                <textarea id="message" placeholder="Message/Comment" ></textarea>
-            </div>
-            <button id="btn">Submit Your query </button>
-            
-
-
-
-        </form>
-    </div>
-</body>
+			<form id="myForm">
+				<div class="input_field">
+					<input type="text" placeholder="Full name" id="name" />
+				</div>
+				<div class="errorHint" hidden>Your name is mandatory!</div>
+				<div class="input_field">
+					<input type="text" placeholder="Subject" id="subject" />
+				</div>
+				<div class="input_field">
+					<input type="text" placeholder="Phone Number" id="phone" />
+				</div>
+				<div class="input_field">
+					<input type="text" placeholder="Email Address" id="email" />
+				</div>
+				<div class="input_field">
+					<textarea id="message" placeholder="Message/Comment"></textarea>
+				</div>
+				<button id="btn">Submit Your query</button>
+			</form>
+		</div>
+	</body>
 </html>
