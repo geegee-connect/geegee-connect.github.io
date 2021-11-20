@@ -20,6 +20,8 @@
     padding: 25px;
     border-radius: 5px;
     font-size: 16px;
+    max-height: 100%;
+    
 }
 .wrapper h2{
     text-align: center;
@@ -33,7 +35,7 @@
 .wrapper p{
     color: #332902;
 }
-button {
+.form_btn{
     border: 0;
     margin-top: 15px;
     padding: 10px;
@@ -46,7 +48,7 @@ button {
     border-radius: 25px;
     cursor: pointer
 }
-button:hover{
+.form_btn:hover{
     background-color: orangered;
 }
 .form_item{
@@ -99,7 +101,7 @@ button:hover{
 .form_input_small{
     max-width: 200px;
 }
-input:invalid+span:after{
+input[type="tel"]:invalid+span:after{
     content:'X';
     color:orangered;
     padding-left:5px;
