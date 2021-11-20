@@ -11,50 +11,50 @@
            <form name="frmSignIn" action="processing_page.html" method="post">
                 <h1>Create your account</h1>
                 <div class="titles">
-                    <p>User name</p></div>
-                <input type="text" name="txtUserName" 
-                value="" placeholder="Enter your full name"
-                maxlength="30"
-                />
+                    <p>Username:</p>
+                </div>
+                <input type="text" name="txtUserName" value="" placeholder="Enter your full name" maxlength="30"/>
                 <br>
-
 
                 <div class="titles">
-                <p>Password</p></div>
-                <input type="password" name="pwdUser"  value="" placeholder="Enter your password" maxlength="15"
-                />
+                    <p>Password:</p>
+                </div>
+                <input type="password" name="pwdUser"  value="" placeholder="Enter your password" maxlength="15"/>
                 <br>
 
-
-                <div class="titles"
-                ><p>Confirm Password</p></div>
-                <input type="password" name="pwdConfirm" value="" placeholder="Confirm your password" maxlength="15"
-                />
+                <div class="titles">
+                    <p>Confirm Password:</p>
+                </div>
+                <input type="password" name="pwdConfirm" value="" placeholder="Confirm your password" maxlength="15"/>
+                <br><br>
                 
-                
-                <div class="titles"
-                ><p>Status</p></div>
-                <input type="radio" name="rdbStatus" id="rdbStatus" value="S" checked>Student
-                    
-
+                <div class="titles">
+                    <p>Status:</p>
+                </div>
+                <input type="radio" name="rdbStatus" id="rdbStatus" value="S" checked/>Student
                 <br>
                 
-                    <input type="radio" name="rdbStatus" id="rdbStatus" value="O">Other
-                    
-                <div class="titles"><p>Your University</p></div>
+                <input type="radio" name="rdbStatus" id="rdbStatus" value="O"/>Other
+                <br><br>
 
-                <input type="checkbox" name="chkYourUniversity" id="University" value="UO" checked/>University of Ottawa<br>
+                <div class="titles">
+                    <p>Your University:</p>
+                </div>
+
+                <input type="checkbox" name="chkYourUniversity" id="University" value="UO" checked/>University of Ottawa
+                <br>
                 
-
-                <input type="checkbox" name="chkYourUniversity" id="University2"value="UC"/>Carlenton University<br>
+                <input type="checkbox" name="chkYourUniversity" id="University2"value="UC"/>Carleton University
+                <br>
                     
+                <input type="checkbox" name="chkYourUniversity" id="University3" value="AC"/>Algonquin College
+                <br>    
 
-                <input type="checkbox" name="chkYourUniversity" id="University3" value="AC"/>Algonquin College<br>
-                    
-
-                <input type="checkbox" name="chkYourUniversity" id="University4" value="O"/>Other<br>
-                </div>              
-                <p id="error">Your preferences</p>   
+                <input type="checkbox" name="chkYourUniversity" id="University4" value="O"/>Other
+                <br><br>
+                <div class="titles">            
+                    <p>Your preferences:</p>
+                </div>   
                 <div
                     class="select">
                     <select name="format" id="format">
@@ -67,13 +67,17 @@
                         <option value="Language pratice">Language Practice</option>
                     </select>
                 </div>
-                <p id="myParagraph">Write your address please</p>
-                <textarea class="textarea" id="textarea" name="textarea_description" rows="4" cols="37" 
-                maxlength="100" minlength="3" placeholder="Write your address"></textarea>
-                <button type="button">Submit</button>
+                <div class="titles">
+                    <p>Write your address please:</p>
+                </div>
+                <textarea class="textarea" id="textarea" name="textarea_description" rows="4" cols="37" maxlength="100" minlength="3" placeholder="Write your address"></textarea>
+                <br><br><br>
+                <button type="submit">Submit</button>
+                <br><br>
             </form>
 
+        </div>
+
     </body>
-      
   
 </html>
