@@ -2,14 +2,15 @@
 
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
     outline: none;
     font-family: 'Zen Old Mincho' , serif;
     background-color: #90041c;
+    line-height: 1.5;
 }
 .wrapper{
-    position: absolute;
+    position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -17,6 +18,7 @@
     width: 100%;
     padding: 25px;
     border-radius: 5px;
+    font-size: 16px;
 }
 .wrapper h2{
     text-align: center;
@@ -24,11 +26,13 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #332902;
+    font-size: 2em;
+    font-weight: 600;
 }
 .wrapper p{
     color: #332902;
 }
-.wrapper .input_field{
+/*.wrapper .input_field{
     margin-bottom: 10px;
 }
 .wrapper .errorHint{
@@ -44,7 +48,7 @@
 
 .wrapper textarea{
     height: 80px;
-}
+}*/
 button {
     border: 0;
     margin-top: 15px;
@@ -62,7 +66,7 @@ button:hover{
     background-color: orangered;
 }
 
-.wrapper #error_message{
+/*.wrapper #error_message{
     margin-bottom: 20px;
     padding: 0px;
     background: #90041c;
@@ -73,7 +77,40 @@ button:hover{
 .hidden{
     display: none;
     
+}*/
+.form_item{
+    display: flex;
+    flex-direction: column;
 }
+.form_item>*{
+    align-self: flex-start;
+}
+.form_label{
+    font-weight: 600;
+    padding: 10px 0;
 
+}
+.form_input{
+    width: 100%;
+    max-width: 425px;
+    padding: 0.8em;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    outline: none;
+    border:1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+.form_input:focus{
+    background-color: #ffffff;
+}
+.form_input::placeholder{
+    color:dimgray;
+}
+.form_input--error{
+    color:#d50000
+
+}
 
 
