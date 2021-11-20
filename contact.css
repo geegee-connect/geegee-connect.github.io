@@ -1,15 +1,17 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&family=Zen+Old+Mincho&display=swap');
 
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
     outline: none;
     font-family: 'Zen Old Mincho' , serif;
     background-color: #90041c;
 }
 .wrapper{
-    position: absolute;
+    position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -17,6 +19,9 @@
     width: 100%;
     padding: 25px;
     border-radius: 5px;
+    font-size: 16px;
+    max-height: 100%;
+    
 }
 .wrapper h2{
     text-align: center;
@@ -24,28 +29,13 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #332902;
+    font-size: 2em;
+    font-weight: 600;
 }
 .wrapper p{
     color: #332902;
 }
-.wrapper .input_field{
-    margin-bottom: 10px;
-}
-.wrapper .errorHint{
-    border: 0.5px solid red;
-    color: red;
-}
-.wrapper .input_field input[type="text"],
-.wrapper textarea{
-    width: 100%;
-    border: 1px solid gray;
-    padding: 10px;
-}
-
-.wrapper textarea{
-    height: 80px;
-}
-button {
+.form_btn{
     border: 0;
     margin-top: 15px;
     padding: 10px;
@@ -58,22 +48,68 @@ button {
     border-radius: 25px;
     cursor: pointer
 }
-button:hover{
+.form_btn:hover{
     background-color: orangered;
 }
-
-.wrapper #error_message{
-    margin-bottom: 20px;
-    padding: 0px;
-    background: #90041c;
-    text-align: center ;
-    font-size: 14px;
-    transition: all 0.5s ease;
+.form_item{
+    display: flex;
+    flex-direction: column;
 }
-.hidden{
-    display: none;
-    
+.form_item>*{
+    align-self: flex-start;
 }
+.form_label{
+    font-weight: 600;
+    padding: 10px 0;
 
+}
+.form_input{
+    width: 100%;
+    max-width: 425px;
+    padding: 0.8em;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    outline: none;
+    border:1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+.form_input:focus{
+    background-color: #ffffff;
+}
+.form_input::placeholder{
+    color:dimgray;
+}
+.form_input--error{
+    color:#d50000;
+    background: #fff8f8;
+    border-color: #d50000;
+}
+.form_input--error::placeholder {
+    color:#ffbfbf;
+}
+.form_error{
+    padding-top: 10px;
+    color:#d50000;
+    font-size: 0.9em;
+    visibility: hidden;
+}
+.form_input--error + .form_error{
+    visibility: visible;
+}
+.form_input_small{
+    max-width: 200px;
+}
+input[type="tel"]:invalid+span:after{
+    content:'X';
+    color:orangered;
+    padding-left:5px;
+}
+input:valid+span:after{
+    content: '✓';
+    color:green;
+    padding-left: 5px;
+}
 
 

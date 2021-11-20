@@ -3,44 +3,47 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Contact us</title>
-		<link rel="stylesheet" href="shared/style.css" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="contact.css" />
-		<!--<link rel="shortcut icon" href="images/logo_icon.png" />-->
-		<!--ça marche pas avec ces deux commentaires<script
-			src="shared/auto_header_footer.js"
-			type="text/javascript"
-			defer
-		></script>-->
-		<link rel="stylesheet" href="shared/header_footer.css" />
+		<title>Contact us</title>
 	</head>
 	<body>
 		<script src="contact.js"></script>
 		<div class="wrapper">
-			<h2>Contact us!!<br /></h2>
-			<p>
-				We're waiting for your comment!<br />
-				Do not hesitate to get in touch with us!
-			</p>
-
-			<form id="myForm">
-				<div class="input_field">
-					<input type="text" placeholder="Full name" id="name" />
-				</div>
-				<div class="errorHint" hidden>Your name is mandatory!</div>
-				<div class="input_field">
-					<input type="text" placeholder="Subject" id="subject" />
-				</div>
-				<div class="input_field">
-					<input type="text" placeholder="Phone Number" id="phone" />
-				</div>
-				<div class="input_field">
-					<input type="text" placeholder="Email Address" id="email" />
-				</div>
-				<div class="input_field">
-					<textarea id="message" placeholder="Message/Comment"></textarea>
-				</div>
-				<button id="btn">Submit Your query</button>
+			<form action ="https://formspree.io/f/myylrabq" method="post" id="myForm">
+			<h2>Contact us!!</h2>
+		    <p>We're waiting for your comment!<br>
+			Do not hesitate to get in touch with us!</p>
+			<div class="form_item">
+					<label for="fullname" class="form_label">Full Name:</label>
+					<input type="text" class="form_input" name="fullname" id="fullname" placeholder="Write your full name">
+					<span class="form_error">Error</span>
+			</div>
+            <div class="form_item">
+					<label for="subject" class="form_label">Subject:</label>
+					<input type="text" class="form_input form_input_small" name="subject" id="subject" minlength="1" maxlength="10" placeholder="Writing purpose?">
+					<span class="form_error">Error</span>
+			</div>
+            <div class="form_item">
+					<label for="phone" class="form_label">PhoneNumber:</label>
+					<input type="tel" class="form_input" name="phone" id="phone"placeholder="Enter your phone-number:XXX-XXX-XXXX" required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+					<span class="note">Correctness</span>
+			</div>
+            <div class="form_item">
+					<label for="email" class="form_label">Email:</label>
+					<input type="email" class="form_input" name="email" id="email"placeholder="Enter your full email please" required>
+					<span class="form_error">Error</span>
+			</div>
+            <div class="form_item">
+					<label for="message" class="form_label">Message/Comment:</label>
+					<textarea class="form_input" name="message" id="message" placeholder="Tell us about your experience!"></textarea>
+					<span class="form_error">Error</span>
+			</div>
+			<div class="form_item">
+					<button class="form_btn" type="submit">Submit Your query</button>
+					<span class="form_error">Error</span>
+			</div>			
 			</form>
 		</div>
 	</body>
